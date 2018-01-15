@@ -12,3 +12,9 @@ S = "On input <M,w>:
 4. If M has accepted, accept; if M rejected, reject."
 因此，如果 R 決定 HALTTM，則 S 決定 ATM；因為 ATM 是不可決定的問題，所以 HALTTM 也是不可決定的問題。
 
+### What does it mean by saying that problem A is reducible to problem B?
+A solution to B can be used to solve A.
+
+### If problem A is reducible to problem B, what can we say about the decidability of A and B?
+- B是決定性問題 → A是決定性問題
+- A是不可決定性問題 → B是不可決定性問題
