@@ -68,7 +68,7 @@ A formal language over Σ is a subset of Σ*
 P=NP?
 
 ### What is the pumping lemma for regular language?
-If A is regular language, then there exista number p(pumping length).
+If A is regular language, then there exist a number p(pumping length).
 If s is any string in A of length at least p, then s may be devided into three pieces, s=xyz.
 Satisfying three condiction.
 1. for each i>=0, xy^iz∈A
