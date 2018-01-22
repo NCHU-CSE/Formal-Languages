@@ -14,13 +14,13 @@ A turing machine can be defined as a 7-tuple (Q,Σ,Γ,δ,q0,qaccept,qreject)
     - Q×Γ→Q×Γ×{L,R}，其中L,R表示讀寫頭是向左移還是向右移
     - 會根據當前機器的狀態，和讀寫頭所指的格子中的符號來轉移。
     - 磁針向左/右，磁針移動前指向的符號可做改變。
-5. q0∈Q 起始狀態
+5. q<sub>0</sub>∈Q 起始狀態
     - the start state
-6. qaccept∈Q 接受狀態
+6. q<sub>accept</sub>∈Q 接受狀態
     - the accept state
-7. qreject∈Q 拒絕狀態
+7. q<sub>reject</sub>∈Q 拒絕狀態
     - the reject state
-    - qreject ≠ qaccept
+    - q<sub>reject</sub> ≠ q<sub>accept</sub>
 
 ### Configuration of a Turing machine 圖靈機的組態
 For a state q and two strings u and v over the tape alphabet Γ, we write uqv for the conﬁguration, where
@@ -30,8 +30,8 @@ For a state q and two strings u and v over the tape alphabet Γ, we write uqv fo
 
 ### C1 yields C2 圖靈機的轉移
 From configuration C1 to configuration C2
-- ua(qi)bv yields u(qj)acv if δ(qi,b)=(qj,c,L)。磁針向左，磁針移動前所指向的符號可改變。
-- ua(qi)bv yields uac(qj)v if δ(qi,b)=(qj,c,R)。磁針向右，磁針移動前所指向的符號可改變。
+- uaq<sub>i</sub>bv yields uq<sub>j</sub>acv if δ(q<sub>i</sub>,b)=(q<sub>j</sub>,c,L)。磁針向左，磁針移動前所指向的符號可改變。
+- uaq<sub>i</sub>bv yields uacq<sub>j</sub>v if δ(q<sub>i</sub>,b)=(q<sub>j</sub>,c,R)。磁針向右，磁針移動前所指向的符號可改變。
 
 ### What is the language of turing machine?
 Turing-recongnizable language
@@ -50,11 +50,11 @@ The machine will halt for any input.
 That is, the machine will only accept or reject for it's input.
 
 ### What is a Turing-decidable language?
-Call a language Turing-decidable or simply decidable if some Turing machine decides it.
+Call a language Turing-decidable or simply decidable if some Turing machine decides it.  
 A language which Turing machine recongnizes it and only accepts or rejects it.
 
 ### what is Church-Turing Thesis?
-Church used a notational system called the λ-calculus to deﬁne algorithms. Turing did it with his “machines.” These two deﬁnitions were shown to be equivalent.
+Church used a notational system called the λ-calculus to deﬁne algorithms. Turing did it with his “machines.” These two deﬁnitions were shown to be equivalent. 
 一般定義演算法的方式分成 Church 的 λ 演算和 Turing 的圖靈機，兩者的運算能力是等價的，任一演算法皆可用兩者其一表達。
 
 ### What is Hilbert's tenth problem?

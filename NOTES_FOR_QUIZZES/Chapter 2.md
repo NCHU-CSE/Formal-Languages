@@ -41,12 +41,9 @@ A pushdown automaton is a 6-tuple (Q,Σ,Γ,δ,q0,F), where Q, Σ, Γ, and F are 
 ### pumping lemma for context-free language
 If A is a context-free language, then there exist a number p (pumping length).
 If s is any string in A of length at least p, then s may divided into five pieces s=uvxyz satisfying the conditions:
-1. for each i>=0, uv^i^xy^i^z∈A
+1. for each i>=0, uv<sup>i</sup>xy<sup>i</sup>z∈A
 2. |vy|>0
 3. |vxy|<=p
 
 ### Prove that every RE is a CFL
-PDA 可以辨識 CFL; DFA 可以辨識 RE
-而 DFA 可以視為 PDA (忽略 PDA 的 stack)
-所以 RE 也是 CFL
-(因為 RE 可以被 DFA 辨識，而 DFA 屬於 PDA，所以 RE 也可以被 PDA 辨識，所以 RE 是 CFL )
+因為 RE 可以被 DFA 辨識，而 DFA 屬於 PDA，所以 RE 也可以被 PDA 辨識，所以 RE 是 CFL。
