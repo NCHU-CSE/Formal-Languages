@@ -7,7 +7,7 @@ Chapter 4
 A<sub>TM</sub> = {<T,w> | T is a Turing machine that accepts string w}
 
 ### How to solve the computational problem of testing weather a DFA B accepts an input w?
-It's same with the problem of testing weather <B,w> is member of the language ADFA.
+It's same with the problem of testing weather <B,w> is member of the language A<sub>DFA</sub>.
 
 ### Define the acceptance problem for DFA, i.e. A<sub>DFA</sub>
 A<sub>DFA</sub> = {<D,w> | D is a DFA that accept string w}
