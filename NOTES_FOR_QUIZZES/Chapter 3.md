@@ -1,13 +1,13 @@
 Chapter 3
 ===
 ### Formal Definition of Turing Machine
-A turing machine can be defined as a 7-tuple (Q,Σ,Γ,δ,q0,qaccept,qreject)
+A turing machine can be defined as a 7-tuple (Q,Σ,Γ,δ,q<sub>0</sub>,q<sub>accept</sub>,q<sub>reject</sub>)
 1. Q 狀態集合
     - a set of the state
 2. Σ 輸入字母表 (不包含特殊的空白符□)
-    - input alphabet, not cantaining the blank symbol, U
+    - input alphabet, not cantaining the blank symbol, □
 3. Γ 紙帶字母表 (□∈Γ且Σ⊂Γ)
-    - tape alphabet, where U∈Γ and Σ⊂Γ
+    - tape alphabet, where □∈Γ and Σ⊂Γ
     - 紙帶字元集要有空，來表示沒寫的部分
     - 輸入的字元集屬於紙帶上的字元集，因為輸入要放到紙帶上
 4. δ 轉移函式
@@ -54,24 +54,24 @@ Call a language Turing-decidable or simply decidable if some Turing machine deci
 A language which Turing machine recongnizes it and only accepts or rejects it.
 
 ### what is Church-Turing Thesis?
-Church used a notational system called the λ-calculus to deﬁne algorithms. Turing did it with his “machines.” These two deﬁnitions were shown to be equivalent. 
+Church used a notational system called the λ-calculus to deﬁne algorithms. Turing did it with his “machines.” These two deﬁnitions were shown to be equivalent.  
 一般定義演算法的方式分成 Church 的 λ 演算和 Turing 的圖靈機，兩者的運算能力是等價的，任一演算法皆可用兩者其一表達。
 
 ### What is Hilbert's tenth problem?
-D = {P|P is the polynomial with a internal root}
+D = {P|P is the polynomial with a internal root}  
 是否有一個演算法可判斷該多項式是否有整數解。
 
 ### Show that Hilbert's tenth problem is Turing-recongnizable.
-D = {P|P is the polynomial with a internal root}
-P = c1x1+c2x2+...+c0
-P 的解為 {x1,x2...} 是一個 set，沒有 range 限制，故須用暴力法逐一求解。
+D = {P|P is the polynomial with a internal root}  
+P = c1x1+c2x2+...+c0  
+P 的解為 {x1,x2...} 是一個 set，沒有 range 限制，故須用暴力法逐一求解。  
 所以 D is Turing-recongnizable
 
 ### Convert the Hilbert's tenth problem into a language/decision problem.
-D = {P|P is the polynomial with a internal root}
-D1 = {P|P is the polynomial over x with a internal root}
-D and D1 both Turing recognizable language.
-因為 D1 有 range 限制，所以逐一帶入必定有解，所以 D1 is Turing-decodable language.
+D = {P|P is the polynomial with a internal root}  
+D1 = {P|P is the polynomial over x with a internal root}  
+D and D1 both Turing recognizable language.  
+因為 D1 有 range 限制，所以逐一帶入必定有解，所以 D1 is Turing-decodable language.  
 The output of D1 exist between ±k(cmax/c1)
 
 ### Corresponding to the above question ,is the decision problem Turing-decidable?
