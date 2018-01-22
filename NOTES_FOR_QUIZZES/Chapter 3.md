@@ -55,7 +55,7 @@ A language which Turing machine recongnizes it and only accepts or rejects it.
 
 ### what is Church-Turing Thesis?
 Church used a notational system called the λ-calculus to deﬁne algorithms. Turing did it with his “machines.” These two deﬁnitions were shown to be equivalent.
-一般定義演算法的方式分成 Church 的 λ 演算 Turing 的圖靈機，兩者的運算能力是等價的，任一演算法皆可用兩者其一表達。
+一般定義演算法的方式分成 Church 的 λ 演算和 Turing 的圖靈機，兩者的運算能力是等價的，任一演算法皆可用兩者其一表達。
 
 ### What is Hilbert's tenth problem?
 D = {P|P is the polynomial with a internal root}

@@ -46,7 +46,7 @@ If s is any string in A of length at least p, then s may divided into five piece
 3. |vxy|<=p
 
 ### Prove that every RE is a CFL
-PDA可以辨識CFL; DFA可以辨識RE
-而DFA可以視為PDA(忽略PDA的stack)
-所以RE也是CFL
-(因為RE可以被DFA辨識，而DFA屬於PDA，所以RE也可以被PDA辨識，所以RE是CFL)
+PDA 可以辨識 CFL; DFA 可以辨識 RE
+而 DFA 可以視為 PDA (忽略 PDA 的 stack)
+所以 RE 也是 CFL
+(因為 RE 可以被 DFA 辨識，而 DFA 屬於 PDA，所以 RE 也可以被 PDA 辨識，所以 RE 是 CFL )

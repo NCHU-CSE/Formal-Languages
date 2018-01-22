@@ -71,7 +71,7 @@ P=NP?
 If A is regular language, then there exist a number p(pumping length).
 If s is any string in A of length at least p, then s may be devided into three pieces, s=xyz.
 Satisfying three condiction.
-1. for each i>=0, xy^iz∈A
+1. for each i>=0, xy<sup>i</sup>z∈A
 2. |y|>0
 3. |xy|<=p
 
